@@ -1,0 +1,20 @@
+[project]
+name = "skills-mcp-server"
+version = "0.1.0"
+description = "A shared skills MCP server for AI agents"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[server]>=1.0.0",
+    "PyYAML>=6.0",
+]
+
+[project.scripts]
+skills-mcp-server = "skills_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["skills_mcp"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
