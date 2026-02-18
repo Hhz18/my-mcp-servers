@@ -2,7 +2,6 @@
 from mcp.server import Server
 from mcp.server.stdio import stdio_server
 from mcp.types import Tool, TextContent
-from mcp.server.lifecycle import AppLifecycleCallback
 import asyncio
 
 from .skills_loader import load_all_skills, match_skills, Skill
